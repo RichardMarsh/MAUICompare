@@ -24,7 +24,7 @@
 	</Shell.Resources>
 	
 	<TabBar>
-		<ShellContent Title="About" Icon="{FontImage FontFamily=FA , Glyph=&#xe922;}" Route="AboutPage" ContentTemplate="{DataTemplate local:PageOne}" />
-		<ShellContent Title="Browse" Icon="{FontImage FontFamily=FA , Glyph=&#xe910;}" ContentTemplate="{DataTemplate local:PageTwo}" />
+		<ShellContent Title="About" Icon="{FontImage FontFamily=FA , Glyph=&#xe922;}" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+		<ShellContent Title="Items" Icon="{FontImage FontFamily=FA , Glyph=&#xe910;}" ContentTemplate="{DataTemplate local:ItemsPage}" />
 	</TabBar>
 </Shell>

@@ -27,6 +27,8 @@
 		<SupportedOSPlatformVersion Condition="'$(TargetFramework)' == 'net6.0-android'">21.0</SupportedOSPlatformVersion>
 		<SupportedOSPlatformVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$(TargetFramework.Contains('-windows'))">10.0.17763.0</TargetPlatformMinVersion>
+		<CodesignKey>Apple Development: Richard Marsh (P6WNJV83MX)</CodesignKey>
+		<CodesignProvision>VS: WildCard Development</CodesignProvision>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -60,16 +62,31 @@
 	  <Compile Update="AppShell.xaml.cs">
 	    <DependentUpon>AppShell.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Pages\AboutPage.xaml.cs">
+	    <DependentUpon>AboutPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Pages\LoginPage.xaml.cs">
+	    <DependentUpon>LoginPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <MauiXaml Update="AppShell.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PageOne.xaml">
+	  <MauiXaml Update="Pages\AboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Pages\PageTwo.xaml">
+	  <MauiXaml Update="Pages\ItemDetailPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\ItemsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\LoginPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\NewItemPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
